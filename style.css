@@ -1,0 +1,10 @@
+button, input, label {
+    display: block;
+}
+
+#deleteBanner {
+    display: none;
+    padding: 20px;
+    border: red 2px solid;
+    background-color: pink;
+}

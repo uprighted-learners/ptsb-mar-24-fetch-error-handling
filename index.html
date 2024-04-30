@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fetch</title>
+</head>
+<body>
+    
+    <button id="ajaxBtn">Ajax Call</button>
+    <button id="fetchGETBtn">Fetch GET</button>
+    <button id="fetchREADME">Fetch README</button>
+    <button id="parseJson">Parse Json</button>
+
+    <hr />
+    <!-- Creating a resource -->
+    POST Request
+    <form id="postForm">
+        <label for="userId">User Id</label>
+        <input type="number" name="userId" id="userId" />
+
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" placeholder="Title"/>
+
+        <label for="body">Body</label>
+        <textarea type="text" name="body" id="body"></textarea>
+        <button type="submit" id="fetchPOSTBtn">Fetch Post</button>
+    </form>
+
+    <!-- Update form -->
+
+    PUT Request
+    <form id="putForm">
+        <input type="hidden" name="id" id="id"/>
+
+        <label for="userId">User Id</label>
+        <input type="number" name="userId" id="userId" />
+
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" placeholder="Title"/>
+
+        <label for="body">Body</label>
+        <textarea type="text" name="body" id="body"></textarea>
+        <button type="submit" id="fetchPUTBtn">Fetch PUT</button>
+    </form>
+
+    <!-- DELETE REQUEST -->
+
+    DELETE Request
+
+    <!-- ERROR Banner. This initially is not visible because of our css. However it shows when a user gives an invalid id value through JavaScript -->
+    <div id="deleteBanner">
+        Your id is NOT a number!
+    </div>
+
+    <form id="deleteForm">
+        <input id="id" name="id" placeholder="Id"/>
+        <button type="submit">Delete</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
